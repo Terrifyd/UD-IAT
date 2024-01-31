@@ -13,7 +13,9 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
     		    {image : 'Fat_Man_1.jpg'}, 
     			{image : 'Fat_Man_2.jpg'}, 
     			{image : 'Fat_Man_3.jpg'}, 
-    			{image : 'Fat_Man_4.jpg'}
+    			{image : 'Fat_Man_4.jpg'},
+				{image : 'Fat_Woman_5.jpg'},
+				{image : 'Fat_Woman_6.jpg'}
 		    ], 
 		    //Stimulus css (style)
 		    css : {color:'#31b404','font-size':'3em'}
