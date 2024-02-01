@@ -2,10 +2,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 	
 	var API = new APIConstructor();
 		  return stiatExtension({
-		  category : { 
-		    name : 'Black people', //Will appear in the data.
+		  category1 : { 
+		    name : 'Fat People', //Will appear in the data.
 		    title : {
-		      media : {word : 'Black people'}, //Name of the category presented in the task.
+		      media : {word : 'Fat People'}, //Name of the category presented in the task.
 		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
@@ -19,7 +19,26 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 		    ], 
 		    //Stimulus css (style)
 		    css : {color:'#31b404','font-size':'3em'}
-		  },	
+		  },
+
+		  category2 : { 
+		    name : 'Thin People', //Will appear in the data.
+		    title : {
+		      media : {word : 'Thin People'}, //Name of the category presented in the task.
+		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+		      height : 7 //Used to position the "Or" in the combined block.
+		    }, 
+		    media : [ //Stimuli content as PIP's media objects
+    		    {image : 'Thin_man_1.png'}, 
+    			{image : 'Thin_man_2.png'}, 
+    			{image : 'Thin_man_3.jpeg'}, 
+    			{image : 'Thin_man_4.png'},
+				{image : 'Thin_woman_1.jpeg'},
+				{image : 'Thin_woman_2.png'}
+		    ], 
+		    //Stimulus css (style)
+		    css : {color:'#31b404','font-size':'3em'}
+		  },
 
   		attribute1 : 
 			{
