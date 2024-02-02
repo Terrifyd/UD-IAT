@@ -2,7 +2,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 	
 	var API = new APIConstructor();
 		  return stiatExtension({
-		  category1 : { 
+		  category : { 
 		    name : 'Fat People', //Will appear in the data.
 		    title : {
 		      media : {word : 'Fat People'}, //Name of the category presented in the task.
