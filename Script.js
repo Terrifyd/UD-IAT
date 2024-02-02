@@ -44,7 +44,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 			{
 			name : 'Unpleasant', //Attribute label
 			title : {
-				media : {word : 'Bad'}, //Name of the category presented in the task.
+				media : {word : 'Unpleasant'}, //Name of the category presented in the task.
 				css : {color:'#0433b4','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
@@ -63,7 +63,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 			{
 			name : 'Pleasant', //Attribute label
 			title : {
-				media : {word : 'Good'}, //Name of the category presented in the task.
+				media : {word : 'Pleasant'}, //Name of the category presented in the task.
 				css : {color:'#0433b4','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
