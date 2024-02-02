@@ -6,7 +6,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 		    name : 'Fat People', //Will appear in the data.
 		    title : {
 		      media : {word : 'Fat People'}, //Name of the category presented in the task.
-		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+		      css : {color:'#0433b4','font-size':'2em'}, //Style of the category title.
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects
@@ -18,14 +18,14 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 				{image : 'Fat_woman_2.jpg'}
 		    ], 
 		    //Stimulus css (style)
-		    css : {color:'#b4049a','font-size':'3em'}
+		    css : {color:'#0433b4','font-size':'3em'}
 		  },
 
 		  category2 : { 
 		    name : 'Thin People', //Will appear in the data.
 		    title : {
 		      media : {word : 'Thin People'}, //Name of the category presented in the task.
-		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+		      css : {color:'#0433b4','font-size':'2em'}, //Style of the category title.
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects
@@ -37,7 +37,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 				{image : 'Thin_woman_2.png'}
 		    ], 
 		    //Stimulus css (style)
-		    css : {color:'#31b404','font-size':'3em'}
+		    css : {color:'#0433b4','font-size':'3em'}
 		  },
 
   		attribute1 : 
@@ -45,7 +45,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 			name : 'Unpleasant', //Attribute label
 			title : {
 				media : {word : 'Bad'}, //Name of the category presented in the task.
-				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				css : {color:'#0433b4','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
@@ -57,14 +57,14 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 				{word: 'Grief'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#31b404','font-size':'3em'}
+			css : {color:'#0433b4','font-size':'3em'}
 			},
 		attribute2 : 
 			{
 			name : 'Pleasant', //Attribute label
 			title : {
 				media : {word : 'Good'}, //Name of the category presented in the task.
-				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				css : {color:'#0433b4','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
@@ -76,7 +76,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 				{word: 'Love'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#31b404','font-size':'3em'}
+			css : {color:'#0433b4','font-size':'3em'}
 			},
 
   base_url : {//Where are your images at?
