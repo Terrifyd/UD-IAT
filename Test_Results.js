@@ -2,12 +2,12 @@
 // function for extracting a subjects results from the test data
 export function getTestResults(data) {
     if (data.includes('Your responses suggested')) {
-        index = data.indexOf('Your responses suggested'); // index where outpu result begins
+        var index = data.indexOf('Your responses suggested'); // index where outpu result begins
         //console.log("1st if triggered");
     }
 
     else if (data.includes('There were')) {
-        index = data.indexOf('There were'); // index where output result begins
+        var index = data.indexOf('There were'); // index where output result begins
         //console.log("2nd if triggered");
     }
 
