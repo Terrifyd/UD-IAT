@@ -1,5 +1,5 @@
-//define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(APIConstructor, iatExtension){
-define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(APIConstructor, iatExtension){
+//define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
@@ -40,7 +40,7 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script.js'], function(
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 
-		attribute1 : 
+		attribute1 : // TOO MANY STIMULUS?? FORMAT WRONG??
 			{
 				name : 'Bad words', //Attribute name to be used for feedback and logging
 				title : {
