@@ -39,6 +39,50 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 
+		attribute1 : 
+			{
+				name : 'Unpleasant', //Attribute name to be used for feedback and logging
+				title : {
+					media : {word : 'Unpleasant'}, //Name of the category presented in the task.
+					css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+					height : 4 //Used to position the "Or" in the combined block.
+				}, 
+				media : [ //Stimuli
+					{word: 'Hate'},
+					{word: 'Bothersome'},
+					{word: 'Ugly'},
+					{word: 'Grief'},
+					{word: 'Poison'},
+					{word: 'Annoy'},
+					{word: 'Humiliate'},
+					{word: 'Rotten'}
+				], 
+				//Can change color and size of the targets here.
+				css : {color:'#31b404','font-size':'2em'}
+			},
+
+			attribute2 : 
+			{
+				name : 'Pleasant', //Attribute name to be used for feedback and logging
+				title : {
+					media : {word : 'Pleasant'}, //Name of the category presented in the task.
+					css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+					height : 4 //Used to position the "Or" in the combined block.
+				}, 
+				media : [ //Stimuli
+					{word: 'Cheerful'},
+					{word: 'Excitement'},
+					{word: 'Fantastic'},
+					{word: 'Friendship'},
+					{word: 'Glad'},
+					{word: 'Cherish'},
+					{word: 'Attractive'},
+					{word: 'Pleasing'}
+				], 
+				//Can change color and size of the targets here.
+				css : {color:'#31b404','font-size':'2em'}
+			},	
+
 		base_url : {//Where are your images at?
 			image : 'https://terrifyd.github.io/UD-IAT/Images/'
 			//image : 'https://baranan.github.io/minno-tasks/images/'
