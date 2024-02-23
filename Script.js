@@ -40,7 +40,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 
-		attribute1 : // TOO MANY STIMULUS?? FORMAT WRONG??
+/* 		attribute1 : // TOO MANY STIMULUS?? FORMAT WRONG??
 			{
 				name : 'Bad words', //Attribute name to be used for feedback and logging
 				title : {
@@ -82,7 +82,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				], 
 				//Can change color and size of the targets here.
 				css : {color:'#31b404','font-size':'2em'}
-			},	 
+			},	  */
 
 		base_url : {//Where are your images at?
 			image : 'https://terrifyd.github.io/UD-IAT/Images/'
