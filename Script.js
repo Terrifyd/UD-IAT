@@ -1,5 +1,5 @@
 //define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(APIConstructor, iatExtension){
-	define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
@@ -40,7 +40,7 @@
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 
-		/* attribute1 : 
+		attribute1 : 
 			{
 				name : 'Bad words', //Attribute name to be used for feedback and logging
 				title : {
@@ -82,7 +82,7 @@
 				], 
 				//Can change color and size of the targets here.
 				css : {color:'#31b404','font-size':'2em'}
-			},	 */
+			},	 
 
 		base_url : {//Where are your images at?
 			image : 'https://terrifyd.github.io/UD-IAT/Images/'
