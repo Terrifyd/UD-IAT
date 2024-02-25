@@ -40,9 +40,9 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Mobile_Full_Script.js'], fu
 
 		base_url : {//Where are your images at?
 			image : 'https://baranan.github.io/minno-tasks/images/'
-		},
+		}
 
-        isTouch : global.$isTouch
+        //isTouch : global.$isTouch
 
 
 	});
