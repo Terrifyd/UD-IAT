@@ -32,9 +32,9 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			{image : 'Thin_man_1.png'}, 
 			{image : 'Thin_man_2.png'}, 
 			{image : 'Thin_man_3.jpeg'}, 
-			{image : 'Thin_man_4.png'},
-			{image : 'Thin_woman_1.jpeg'},
-			{image : 'Thin_woman_2.png'}
+			{image : 'Thin_man_4.png'}, 
+			{image : 'Thin_woman_1.jpeg'}, 
+			{image : 'Thin_woman_2.png'} 
 			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}

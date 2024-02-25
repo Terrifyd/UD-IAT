@@ -40,6 +40,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 
 		base_url : {//Where are your images at?
 			image : 'https://baranan.github.io/minno-tasks/images/'
-		} 
+		},
+		
+        isTouch : global.$isTouch
+
+
 	});
 });
