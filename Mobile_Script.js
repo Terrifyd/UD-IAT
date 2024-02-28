@@ -39,6 +39,47 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Mobile_Full_Script.js'], fu
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 
+		attribute1 : {
+            name : 'Bad words',
+            title : {
+                media : {word : 'Bad words'},
+                css : {color:'#0000FF','font-size':'1.8em'},
+                height : 4 //Used to position the "Or" in the combined block.
+            },
+            stimulusMedia : [ //Stimuli content as PIP's media objects
+				{word: 'Hate'},
+				{word: 'Bothersome'},
+				{word: 'Ugly'},
+				{word: 'Grief'},
+				{word: 'Poison'},
+				{word: 'Annoy'},
+				{word: 'Humiliate'},
+				{word: 'Rotten'}
+            ],
+            //Stimulus css
+            stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+        },
+        attribute2 : {
+            name : 'Good words',
+            title : {
+                media : {word : 'Good words'},
+                css : {color:'#0000FF','font-size':'1.8em'},
+                height : 4 //Used to position the "Or" in the combined block.
+            },
+            stimulusMedia : [ //Stimuli content as PIP's media objects
+				{word: 'Cheerful'},
+				{word: 'Excitement'},
+				{word: 'Fantastic'},
+				{word: 'Friendship'},
+				{word: 'Glad'},
+				{word: 'Cherish'},
+				{word: 'Attractive'},
+				{word: 'Pleasing'}
+            ],
+            //Stimulus css
+            stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+        },
+
 		base_url : {//Where are your images at?
 			image : 'https://terrifyd.github.io/UD-IAT/Images/'
 		}
