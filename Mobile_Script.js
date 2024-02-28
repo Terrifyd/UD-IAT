@@ -10,12 +10,12 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Mobile_Full_Script.js'], fu
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'black1.jpg'}, 
-    			{image : 'black2.jpg'}, 
-    			{image : 'black3.jpg'}, 
-    			{image : 'black4.jpg'}, 
-    			{image : 'black5.jpg'}, 
-    			{image : 'black6.jpg'}
+				{image : 'Fat_man_5.jpg'}, 
+				{image : 'Fat_man_2.jpg'}, 
+				{image : 'Fat_man_3.jpg'}, 
+				{image : 'Fat_man_4.jpg'},
+				{image : 'Fat_woman_1.jpg'},
+				{image : 'Fat_woman_2.jpg'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
@@ -28,18 +28,19 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Mobile_Full_Script.js'], fu
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'yf1.jpg'}, 
-    			{image : 'yf4.jpg'}, 
-    			{image : 'yf5.jpg'}, 
-    			{image : 'ym2.jpg'}, 
-    			{image : 'ym3.jpg'}, 
-    			{image : 'ym5.jpg'}			], 
+				{image : 'Thin_man_1.png'}, 
+				{image : 'Thin_man_2.png'}, 
+				{image : 'Thin_man_3.jpeg'}, 
+				{image : 'Thin_man_4.png'}, 
+				{image : 'Thin_woman_1.jpeg'}, 
+				{image : 'Thin_woman_2.png'}
+			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 
 		base_url : {//Where are your images at?
-			image : 'https://baranan.github.io/minno-tasks/images/'
+			image : 'https://terrifyd.github.io/UD-IAT/Images/'
 		}
 
         //isTouch : global.$isTouch
