@@ -1,8 +1,7 @@
-define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(APIConstructor, iatExtension){
-//define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Mobile_Full_Script.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
-	return iatExtension({ // EACH COMMIT BEHIND BY ONE??
+	return iatExtension({
 		category1 : {
 			name : 'Insects', //Will appear in the data.
 			title : {
@@ -75,59 +74,18 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
                 {word: 'happy'},
                 {word: 'love'},
                 {word: 'friend'},
-				{word: 'joy'}
+                {word: 'joy'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
         },
 
-/* 		attribute1 : // TOO MANY STIMULUS?? FORMAT WRONG??
-			{
-				name : 'Bad words', //Attribute name to be used for feedback and logging
-				title : {
-					media : {word : 'Bad words'}, //Name of the category presented in the task.
-					css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
-					height : 4 //Used to position the "Or" in the combined block.
-				}, 
-				media : [ //Stimuli
-					{word: 'Hate'},
-					{word: 'Bothersome'},
-					{word: 'Ugly'},
-					{word: 'Grief'},
-					{word: 'Poison'},
-					{word: 'Annoy'},
-					{word: 'Humiliate'},
-					{word: 'Rotten'}
-				], 
-				//Can change color and size of the targets here.
-				css : {color:'#31b404','font-size':'2em'}
-			},
-
-			attribute2 : 
-			{
-				name : 'Good words', //Attribute name to be used for feedback and logging
-				title : {
-					media : {word : 'Good words'}, //Name of the category presented in the task.
-					css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
-					height : 4 //Used to position the "Or" in the combined block.
-				}, 
-				media : [ //Stimuli
-					{word: 'Cheerful'},
-					{word: 'Excitement'},
-					{word: 'Fantastic'},
-					{word: 'Friendship'},
-					{word: 'Glad'},
-					{word: 'Cherish'},
-					{word: 'Attractive'},
-					{word: 'Pleasing'}
-				], 
-				//Can change color and size of the targets here.
-				css : {color:'#31b404','font-size':'2em'}
-			},	  */
-
 		base_url : {//Where are your images at?
 			image : 'https://terrifyd.github.io/UD-IAT/Images/'
-			//image : 'https://baranan.github.io/minno-tasks/images/'
-		} 
+		}
+
+        //isTouch : global.$isTouch
+
+
 	});
 });
