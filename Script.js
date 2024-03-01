@@ -64,7 +64,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
             name : 'Good words',
             title : {
                 media : {word : 'Good words'},
-                css : {color:'#0000FF','font-size':'1.8em'},
+                css : {color:'#0000FE','font-size':'1.8em'},
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
