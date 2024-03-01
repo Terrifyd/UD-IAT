@@ -2,7 +2,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 //define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
-	return iatExtension({
+	return iatExtension({ // EACH COMMIT BEHIND BY ONE??
 		category1 : {
 			name : 'Fat people', //Will appear in the data.
 			title : {
@@ -29,7 +29,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-			{image : 'Thin_man_1.png'}, 
+			{image : 'Thin_man_1.jpg'}, 
 			{image : 'Thin_man_2.png'}, 
 			{image : 'Thin_man_3.jpeg'}, 
 			{image : 'Thin_man_4.png'}, 
