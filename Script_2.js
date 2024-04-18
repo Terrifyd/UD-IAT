@@ -140,12 +140,12 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], functio
 			{word: goodWords[3]},
 			{word: goodWords[4]},
 			{word: goodWords[5]} */
-			{word: 'test'},
-			{word: 'test'},
-			{word: 'test'},
-			{word: 'test'},
-			{word: 'test'},
-			{word: 'test'} 
+			{word: 'test2'},
+			{word: 'test2'},
+			{word: 'test2'},
+			{word: 'test2'},
+			{word: 'test2'},
+			{word: 'test2'} 
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
