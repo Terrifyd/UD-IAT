@@ -11,7 +11,7 @@ CITATIONS:
 function randomStimuli(option) {
 
 	return [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement];
-	
+
 	let goodWords = [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement, Smiling,
 		Enjoy, Adore, Cherish, Celebrate, Glad, Happy, Cheer,
 		Glad, Delight, Love, Attractive, Joyous,
@@ -60,8 +60,8 @@ function randomStimuli(option) {
 define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
-	var goodWords = randomStimuli('Good');
-	var badWords = randomStimuli('Bad');
+	//var goodWords = randomStimuli('Good');
+	//var badWords = randomStimuli('Bad');
 
 	return iatExtension({
 		category1 : {
@@ -109,12 +109,18 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], functio
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-				{word: badWords[0]},
+/* 				{word: badWords[0]},
 				{word: badWords[1]},
 				{word: badWords[2]},
 				{word: badWords[3]},
 				{word: badWords[4]},
-				{word: badWords[5]}
+				{word: badWords[5]} */
+				{word: 'test'},
+				{word: 'test'},
+				{word: 'test'},
+				{word: 'test'},
+				{word: 'test'},
+				{word: 'test'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -127,12 +133,18 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], functio
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-			{word: goodWords[0]},
+/* 			{word: goodWords[0]},
 			{word: goodWords[1]},
 			{word: goodWords[2]},
 			{word: goodWords[3]},
 			{word: goodWords[4]},
-			{word: goodWords[5]}
+			{word: goodWords[5]} */
+			{word: 'test'},
+			{word: 'test'},
+			{word: 'test'},
+			{word: 'test'},
+			{word: 'test'},
+			{word: 'test'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
