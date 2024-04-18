@@ -60,8 +60,8 @@ function randomStimuli(option) {
 define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
-	//var goodWords = randomStimuli('Good');
-	//var badWords = randomStimuli('Bad');
+	var goodWords = randomStimuli('Good');
+	var badWords = randomStimuli('Bad');
 
 	return iatExtension({
 		category1 : {
