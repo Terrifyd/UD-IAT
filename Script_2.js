@@ -9,29 +9,32 @@ CITATIONS:
 */
 
 function randomStimuli(option) {
-	goodWords = [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement, Smiling,
+
+	return [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement];
+	
+	let goodWords = [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement, Smiling,
 		Enjoy, Adore, Cherish, Celebrate, Glad, Happy, Cheer,
 		Glad, Delight, Love, Attractive, Joyous,
 		Beautiful, Happy, Glorious, Triumph, Appealing] // 24
 
 
-	badWords = [Awful, Despise, Detest, Yucky, Hate, Poison, Scorn, Ugly,
+	let badWords = [Awful, Despise, Detest, Yucky, Hate, Poison, Scorn, Ugly,
 		Humiliate, Abuse, Sick, Bothersome, Grief, Sadness, Hatred,
 		Dirty, Evil, Horrible, Failure, Negative,
 		Hurtful, Disaster, Horrible, Nasty] // 24
 
 	var stimuli = new Array(6);
-	let flag = True;
+	let flag = true;
 	let newWord;
 	if (option == 'Good') {
 		for (let i = 0; i < 6; i++) {
-			flag = True
+			flag = true
 			while (flag) {
-				let randomNumber = Math.floor(Math.random() * 24);
+				let randomNumber = Math.floor(Math.random() * goodWords.length);
 				newWord = goodWords[randomNumber];
 				if (!stimuli.includes(newWord)) {
 					stimuli[i] = newWord;
-					flag = False;
+					flag = false;
 				}
 			}
 		}
@@ -39,13 +42,13 @@ function randomStimuli(option) {
 
 	else if (option == 'Bad') {
 		for (let i = 0; i < 6; i++) {
-			flag = True
+			flag = true
 			while (flag) {
-				let randomNumber = Math.floor(Math.random() * 24);
+				let randomNumber = Math.floor(Math.random() * badWords.length);
 				newWord = badWords[randomNumber];
 				if (!stimuli.includes(newWord)) {
 					stimuli[i] = newWord;
-					flag = False;
+					flag = false;
 				}
 			}
 		}
