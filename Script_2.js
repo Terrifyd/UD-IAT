@@ -8,8 +8,57 @@ CITATIONS:
 		[Blog post]. Retrieved from https://minnojs.github.io/minnojs-blog/qualtrics-iat/
 */
 
+function randomStimuli(option) {
+	goodWords = [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement, Smiling,
+		Enjoy, Adore, Cherish, Celebrate, Glad, Happy, Cheer,
+		Glad, Delight, Love, Attractive, Joyous,
+		Beautiful, Happy, Glorious, Triumph, Appealing] // 24
+
+
+	badWords = [Awful, Despise, Detest, Yucky, Hate, Poison, Scorn, Ugly,
+		Humiliate, Abuse, Sick, Bothersome, Grief, Sadness, Hatred,
+		Dirty, Evil, Horrible, Failure, Negative,
+		Hurtful, Disaster, Horrible, Nasty] // 24
+
+	var stimuli = new Array(6);
+	let flag = True;
+	let newWord;
+	if (option == 'Good') {
+		for (let i = 0; i < 6; i++) {
+			flag = True
+			while (flag) {
+				let randomNumber = Math.floor(Math.random() * 24);
+				newWord = goodWords[randomNumber];
+				if (!stimuli.includes(newWord)) {
+					stimuli[i] = newWord;
+					flag = False;
+				}
+			}
+		}
+	}
+
+	else if (option == 'Bad') {
+		for (let i = 0; i < 6; i++) {
+			flag = True
+			while (flag) {
+				let randomNumber = Math.floor(Math.random() * 24);
+				newWord = badWords[randomNumber];
+				if (!stimuli.includes(newWord)) {
+					stimuli[i] = newWord;
+					flag = False;
+				}
+			}
+		}
+	}
+
+	return stimuli;
+}
+
 define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
+
+	var goodWords = randomStimuli('Good');
+	var badWords = randomStimuli('Bad');
 
 	return iatExtension({
 		category1 : {
@@ -57,14 +106,12 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], functio
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-				{word: 'Hate'},
-				{word: 'Bothersome'},
-				{word: 'Ugly'},
-				{word: 'Grief'},
-				{word: 'Poison'},
-				{word: 'Annoy'},
-				{word: 'Humiliate'},
-				{word: 'Rotten'}
+				{word: badWords[0]},
+				{word: badWords[1]},
+				{word: badWords[2]},
+				{word: badWords[3]},
+				{word: badWords[4]},
+				{word: badWords[5]}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -77,14 +124,12 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], functio
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-				{word: 'Cheerful'},
-				{word: 'Excitement'},
-				{word: 'Fantastic'},
-				{word: 'Friendship'},
-				{word: 'Glad'},
-				{word: 'Cherish'},
-				{word: 'Attractive'},
-				{word: 'Pleasing'}
+			{word: goodWords[0]},
+			{word: goodWords[1]},
+			{word: goodWords[2]},
+			{word: goodWords[3]},
+			{word: goodWords[4]},
+			{word: goodWords[5]}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
