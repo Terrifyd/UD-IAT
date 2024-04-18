@@ -10,7 +10,6 @@ CITATIONS:
 */
 
 function randomStimuli(option) {
-
 	return [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement];
 
 	let goodWords = [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement, Smiling,
