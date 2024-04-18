@@ -9,6 +9,55 @@ CITATIONS:
 		[Blog post]. Retrieved from https://minnojs.github.io/minnojs-blog/qualtrics-iat/
 */
 
+function randomStimuli(option) {
+
+	return [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement];
+
+	let goodWords = [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement, Smiling,
+		Enjoy, Adore, Cherish, Celebrate, Glad, Happy, Cheer,
+		Glad, Delight, Love, Attractive, Joyous,
+		Beautiful, Happy, Glorious, Triumph, Appealing] // 24
+
+
+	let badWords = [Awful, Despise, Detest, Yucky, Hate, Poison, Scorn, Ugly,
+		Humiliate, Abuse, Sick, Bothersome, Grief, Sadness, Hatred,
+		Dirty, Evil, Horrible, Failure, Negative,
+		Hurtful, Disaster, Horrible, Nasty] // 24
+
+	var stimuli = new Array(6);
+	let flag = true;
+	let newWord;
+	if (option == 'Good') {
+		for (let i = 0; i < 6; i++) {
+			flag = true
+			while (flag) {
+				let randomNumber = Math.floor(Math.random() * goodWords.length);
+				newWord = goodWords[randomNumber];
+				if (!stimuli.includes(newWord)) {
+					stimuli[i] = newWord;
+					flag = false;
+				}
+			}
+		}
+	}
+
+	else if (option == 'Bad') {
+		for (let i = 0; i < 6; i++) {
+			flag = true
+			while (flag) {
+				let randomNumber = Math.floor(Math.random() * badWords.length);
+				newWord = badWords[randomNumber];
+				if (!stimuli.includes(newWord)) {
+					stimuli[i] = newWord;
+					flag = false;
+				}
+			}
+		}
+	}
+
+	return stimuli;
+}
+
 define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
