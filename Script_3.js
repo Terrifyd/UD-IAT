@@ -60,6 +60,9 @@ function randomStimuli(option) {
 define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
+    var goodWords = randomStimuli('Good');
+	var badWords = randomStimuli('Bad');
+
 	return iatExtension({
 		category1 : {
 			name : 'Fat people', //Will appear in the data.
@@ -106,14 +109,14 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], functio
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-				{word: 'Hate'},
-				{word: 'Bothersome'},
-				{word: 'Ugly'},
-				{word: 'Grief'},
-				{word: 'Poison'},
-				{word: 'Annoy'},
-				{word: 'Humiliate'},
-				{word: 'Rotten'}
+				{word: 'Test'},
+				{word: 'Test'},
+				{word: 'Test'},
+				{word: 'Test'},
+				{word: 'Test'},
+				{word: 'Test'},
+				{word: 'Test'},
+				{word: 'Test'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
