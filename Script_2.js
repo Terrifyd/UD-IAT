@@ -128,18 +128,12 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], functio
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-/* 			{word: goodWords[0]},
+ 			{word: goodWords[0]},
 			{word: goodWords[1]},
 			{word: goodWords[2]},
 			{word: goodWords[3]},
 			{word: goodWords[4]},
-			{word: goodWords[5]} */
-			{word: 'test5'},
-			{word: 'test5'},
-			{word: 'test5'},
-			{word: 'test5'},
-			{word: 'test5'},
-			{word: 'test5'} 
+			{word: goodWords[5]} 
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
