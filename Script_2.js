@@ -8,7 +8,7 @@ CITATIONS:
 		[Blog post]. Retrieved from https://minnojs.github.io/minnojs-blog/qualtrics-iat/
 */
 
-/* function randomStimuli(option) {
+function randomStimuli(option) {
 
 	return [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement];
 
@@ -55,7 +55,7 @@ CITATIONS:
 	}
 
 	return stimuli;
-} */
+} 
 
 
 define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], function(APIConstructor, iatExtension){
@@ -140,12 +140,12 @@ define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], functio
 			{word: goodWords[3]},
 			{word: goodWords[4]},
 			{word: goodWords[5]} */
-			{word: 'test2'},
-			{word: 'test2'},
-			{word: 'test2'},
-			{word: 'test2'},
-			{word: 'test2'},
-			{word: 'test2'} 
+			{word: 'test3'},
+			{word: 'test3'},
+			{word: 'test3'},
+			{word: 'test3'},
+			{word: 'test3'},
+			{word: 'test3'} 
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
