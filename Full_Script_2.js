@@ -1,3 +1,15 @@
+/*
+CITATIONS:
+
+	Zlotnick, E., Dzikiewicz, A. J., & Bar-Anan, Y. (2015). Minno.js (Version 0.3) 
+		[Computer software].
+
+	Bar-Anan, Y. (2020, March 3). Running Project Implicit’s IAT from Qulatrics 
+		[Blog post]. Retrieved from https://minnojs.github.io/minnojs-blog/qualtrics-iat/
+*/
+
+
+
 //YBYB:Created from iat8.js, for Qualtrics
 define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) {
 
