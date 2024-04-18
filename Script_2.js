@@ -57,6 +57,7 @@ CITATIONS:
 	return stimuli;
 } */
 
+
 define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
