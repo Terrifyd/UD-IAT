@@ -10,18 +10,18 @@ CITATIONS:
 
 function randomStimuli(option) {
 
-	return [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement];
+	//return ['Joyful', 'Magnificent', 'Friendship', 'Friend', 'Pleasure', 'Excitement'];
 
-	let goodWords = [Joyful, Magnificent, Friendship, Friend, Pleasure, Excitement, Smiling,
-		Enjoy, Adore, Cherish, Celebrate, Glad, Happy, Cheer,
-		Glad, Delight, Love, Attractive, Joyous,
-		Beautiful, Happy, Glorious, Triumph, Appealing] // 24
+	let goodWords = ['Joyful', 'Magnificent', 'Friendship', 'Friend', 'Pleasure', 'Excitement', 'Smiling',
+		'Enjoy', 'Adore', 'Cherish', 'Celebrate', 'Glad', 'Happy', 'Cheer',
+		'Glad', 'Delight', 'Love', 'Attractive', 'Joyous',
+		'Beautiful', 'Happy', 'Glorious', 'Triumph', 'Appealing'] // 24
 
 
-	let badWords = [Awful, Despise, Detest, Yucky, Hate, Poison, Scorn, Ugly,
-		Humiliate, Abuse, Sick, Bothersome, Grief, Sadness, Hatred,
-		Dirty, Evil, Horrible, Failure, Negative,
-		Hurtful, Disaster, Horrible, Nasty] // 24
+	let badWords = ['Awful', 'Despise', 'Detest', 'Yucky', 'Hate', 'Poison', 'Scorn', 'Ugly',
+		'Humiliate', 'Abuse', 'Sick', 'Bothersome', 'Grief', 'Sadness', 'Hatred',
+		'Dirty', 'Evil', 'Horrible', 'Failure', 'Negative',
+		'Hurtful', 'Disaster', 'Horrible', 'Nasty'] // 24
 
 	var stimuli = new Array(6);
 	let flag = true;
@@ -61,8 +61,8 @@ function randomStimuli(option) {
 define(['pipAPI', 'https://terrifyd.github.io/UD-IAT/Full_Script_2.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
-	//var goodWords = randomStimuli('Good');
-	//var badWords = randomStimuli('Bad');
+	var goodWords = randomStimuli('Good');
+	var badWords = randomStimuli('Bad');
 
 	return iatExtension({
 		category1 : {
